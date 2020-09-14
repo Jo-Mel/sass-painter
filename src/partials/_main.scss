@@ -36,3 +36,32 @@ main {
 
     }
 }
+
+.overview-nav {
+    background-color: lightgrey;
+    height: 75px;
+    font-size: 18px;
+
+    ul {
+        list-style: none;
+        @include flex(row, center, center);
+
+        padding: 22px;
+
+        li {
+            padding: 14px, 0;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: dimgrey;
+            padding: 15px;
+
+            &:hover {
+                background-color: lighten(lightgrey, 10);
+                border-bottom: 3px solid dimgrey;
+            }
+        }
+    }
+}

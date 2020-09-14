@@ -146,3 +146,34 @@ main {
   color: #cacaca;
 }
 
+.overview-nav {
+  background-color: lightgrey;
+  height: 75px;
+  font-size: 18px;
+}
+
+.overview-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+}
+
+.overview-nav ul li {
+  padding: 14px, 0;
+}
+
+.overview-nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: dimgrey;
+  padding: 15px;
+}
+
+.overview-nav ul a:hover {
+  background-color: #ededed;
+  border-bottom: 3px solid dimgrey;
+}
+
