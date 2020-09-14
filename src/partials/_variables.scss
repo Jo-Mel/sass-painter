@@ -1,14 +1,17 @@
 //colori
-$bgColor: black;
-$txtColor: lightgrey;
+$primaryColor: black;
+$txtColor: #989898;
 $colorWhite: white;
 
 //tipografia
+$fontFamily: 'Roboto',
+sans-serif;
 $fontSize: 14px;
+
 //height
 $headerH: 100px;
-$topHeaderH: 40px;
-$bottomHeaderH: 60px;
+$topHeaderH: 35px;
+$bottomHeaderH: 65px;
 
 //padding
 $paddingNavTop: 25px;

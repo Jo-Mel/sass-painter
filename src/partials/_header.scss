@@ -1,7 +1,7 @@
 header {
     height: $headerH;
     width: 100%;
-    background-color: $bgColor;
+    background-color: $primaryColor;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -15,6 +15,8 @@ header {
             ul {
                 @include flex(row, flex-end, center);
                 list-style: none;
+                padding-right: 250px;
+
 
                 li {
                     padding-right: $paddingNavTop;
@@ -29,6 +31,43 @@ header {
                         }
 
                         @include icon_Headertop;
+                    }
+                }
+            }
+        }
+    }
+
+    .#{&}-bottom {
+        height: $bottomHeaderH;
+        @include flex(row, center, center);
+
+        img {
+            padding-right: 18px;
+            width: 120px;
+
+        }
+
+        nav {
+            ul {
+                @include flex(row, center, center);
+                list-style: none;
+
+                li {
+                    // padding: $paddingNavTop;
+
+                    a {
+                        text-decoration: none;
+                        color: $colorWhite;
+                        padding: 18px 22px;
+
+                        i {
+                            color: $txtColor;
+                        }
+
+                        &:hover {
+                            background-color: $colorWhite;
+                            color: $primaryColor;
+                        }
                     }
                 }
             }
