@@ -7,7 +7,7 @@ main {
 
 .jumbotron {
     height: $jumbotronHeight;
-    display: flex;
+    @include flex(column, space-between, center);
 
     #{&}-char {
         color: $colorWhite;
@@ -31,6 +31,7 @@ main {
         .btn {
             @include btn(dimgrey, 14px 35px, 14px, $colorWhite);
             text-transform: uppercase;
+            margin-top: 15px;
         }
 
     }
