@@ -12,3 +12,15 @@
         font-size: $fontSize;
     }
 }
+
+@mixin btn($sfondo, $spazio, $font, $colore) {
+    background-color: $sfondo;
+    padding: $spazio;
+    color: $colore;
+    border: 0;
+
+    &:hover {
+        background-color: darken($sfondo, 8);
+        color: lighten($sfondo, 38);
+    }
+}

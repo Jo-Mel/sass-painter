@@ -91,3 +91,54 @@ header .header-bottom nav ul li a:hover {
   color: black;
 }
 
+main {
+  background: radial-gradient(circle, #3f5efb 0%, #46dffc 100%);
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+.jumbotron {
+  height: 450px;
+  display: flex;
+}
+
+.jumbotron .jumbotron-char {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.jumbotron .jumbotron-char h1 {
+  margin-bottom: 18px;
+}
+
+.jumbotron .jumbotron-char ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.jumbotron .jumbotron-char ul li {
+  padding: 10px 0;
+}
+
+.jumbotron .jumbotron-char .btn {
+  background-color: dimgrey;
+  padding: 14px 35px;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.jumbotron .jumbotron-char .btn:hover {
+  background-color: #555555;
+  color: #cacaca;
+}
+

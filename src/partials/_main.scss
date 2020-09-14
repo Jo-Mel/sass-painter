@@ -1,0 +1,37 @@
+main {
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(70, 223, 252, 1) 100%);
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.jumbotron {
+    height: $jumbotronHeight;
+    display: flex;
+
+    #{&}-char {
+        color: $colorWhite;
+        @include flex(column, center, flex-start);
+        padding: 30px;
+
+        h1 {
+            margin-bottom: 18px;
+        }
+
+        ul {
+            list-style: none;
+            @include flex(column, center, flex-start);
+            padding: 10px;
+
+            li {
+                padding: 10px 0;
+            }
+        }
+
+        .btn {
+            @include btn(dimgrey, 14px 35px, 14px, $colorWhite);
+            text-transform: uppercase;
+        }
+
+    }
+}
