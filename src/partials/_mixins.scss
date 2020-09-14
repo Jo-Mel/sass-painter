@@ -1,0 +1,13 @@
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin icon_Headertop {
+    & i {
+        color: #009cff;
+        margin-right: 10px;
+    }
+}
